@@ -134,7 +134,6 @@ let articlesArray = data.map((item) => {
 
 console.log(articlesArray);
 
-
 function createsArticles(title, date, firstParagraph, secondParagraph, thirdParagraph){
   const article = document.createElement('div');
   const artTitle = document.createElement('h2');
@@ -157,6 +156,7 @@ function createsArticles(title, date, firstParagraph, secondParagraph, thirdPara
   // Events //
   expButton.addEventListener('click', () => {
   article.classList.toggle('article-open');
+  expButton.textContent = 'Collapse';
   })
   // Text Content //
   artTitle.textContent = title;
@@ -164,6 +164,7 @@ function createsArticles(title, date, firstParagraph, secondParagraph, thirdPara
   pGraph1.textContent = firstParagraph;
   pGraph2.textContent = secondParagraph;
   pGraph3.textContent = thirdParagraph;
+  expButton.textContent = 'Expand';
 
   return article
 }
