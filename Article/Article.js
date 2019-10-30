@@ -89,7 +89,7 @@ const data = [
 ];
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
-  
+
   <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
@@ -112,3 +112,34 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+function createsArticles(title, date, firstParagraph, secondParagraph, thirdParagraph){
+  const article = document.createElement('div');
+  const artTitle = document.createElement('h2');
+  const artDate = document.createElement('p');
+  const pGraph1 = document.createElement('p');
+  const pGraph2 = document.createElement('p');
+  const pGraph3 = document.createElement('p');
+  const expButton = document.createElement('span');
+
+  article.appendChild(artTitle);
+  article.appendChild(artDate);
+  article.appendChild(pGraph1);
+  article.appendChild(pGraph2);
+  article.appendChild(pGraph3);
+  article.appendChild(artTitle);
+
+
+
+
+
+
+
+
+
+
+
+
+
+  return article
+}
